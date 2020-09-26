@@ -13,15 +13,16 @@
         <header>
             <nav>
                 <div class="header">
-                    <div class="logo">
-                        <abbr title="Home"><p>Stay<span class="health">Healthy</span></p></abbr>
-                    </div>
+                        <a href="#header" class="logo">
+                            <abbr title="Home"><p>Stay<span class="health">Healthy</span></p></abbr>
+                        </a>
+                    
                         <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Menu</a></li>
-                            <li><a href="#">Contact</a></li>
-                            <li class="insta"><a href="#"><img src="./healthy-foods-img/instagram.png"></a></li>
+                            <li><a href="#header">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#menu">Menu</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                            <li class="insta"><a href="http://www.instagram.com"><img src="./healthy-foods-img/instagram.png"></a></li>
                         </ul>
                         <div class="burger">
                             <div class="line1"></div>
@@ -40,7 +41,8 @@
                             Stay healthy eating better!
                         </p>
                     </p>
-                    <button id="book-table">Book a table</button>
+                    <a href="https://www.quandoo.co.uk/"><button id="book-table">Book a table</button>
+                    </a>
                 </div>
                 <div class="land-img">
                     <img src="healthy-foods-img/Healthy-Meal-PNG.png" alt="">
@@ -99,54 +101,77 @@
                         <img src="/healthy-foods-img/soup.png" alt="">
                     </div>
                     <div class="meal-detail-00">
+                        <h4>Spinach Soap</h4>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque natus eaque veritatis, sint fugiat, </p>
                     </div>
                     <div class="img-meal-01">
                         <img src="/healthy-foods-img/Meal-PNG-Download-Image.png" alt="">
                     </div>  
                     <div class="meal-detail-01">
+                        <h4>Salmon with vegetables</h4>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque natus eaque veritatis, sint fugiat, </p>
                     </div>
                     <div class="img-meal-02">
                         <img src="/healthy-foods-img/Meal-PNG-File-Download-Free.png" alt="">
                     </div>  
                     <div class="meal-detail-02">
+                        <h4>Tacos</h4>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque natus eaque veritatis, sint fugiat, </p>
                     </div>
                     <div class="img-meal-03">
                         <img src="/healthy-foods-img/Healthy-Meal.png" alt="">
                     </div>  
                     <div class="meal-detail-03">
+                        <h4>Coocked Eggs & Carrots</h4>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque natus eaque veritatis, sint fugiat, </p>
                     </div>
             </div>
-                <button class="menu-btn">View Full Menu</button>
+            <div class="view-menu">
+                <button class="menu-btn" data-modal-target="#modal">View Full Menu</button>
+            </div>
+            <div class="modal" id="modal">
+                <div class="modal-header">
+                    <div class="title">Menu</div>
+                    <button data-close-button class="close-button">
+                        &times;
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci cumque, et hic error qui accusamus! Provident optio distinctio quisquam, reiciendis dolorem laudantium vero aspernatur itaque tenetur exercitationem inventore culpa nisi?
+                </div>
+            </div>
+            <div id="overlay"></div>
         </section> 
+        
         <section id="contact">
-            <h1>Contact Us.</h1>
-            <div class="contact-container">
-                <div class="location">
-                    <p class="font-location">Birmingham UK</p>
-                    <p>1 Park Road</p>
-                    <p>B64 9DF Kings Street.</p>
-                    <div class="space-contact">
-                        <p>call directly</p>
-                        <h2>01215614569</h2>
-                    </div>
+            <div class="contactUs">
+                <div class="position-title">
+                    <h1>Contact Us.</h1>
                 </div>
-                <div class="contact-details">
-                    <div class="lunch">
-                        <p class="font-location">Lunch Service</p>
-                        <p>Monday to Saturday: 12pm - 15.30pm.</p>
-                        <p>Sunday & Bank Holidays: 12pm - 21.30pm.</p>
+                <div class="contact-container">
+                    <div class="location">
+                        <p class="font-location">Birmingham UK</p>
+                        <p>1 Park Road</p>
+                        <p>B64 9DF Kings Street.</p>
+                        <div class="space-contact">
+                            <p>call directly</p>
+                            <h2>01215614569</h2>
+                        </div>
                     </div>
-                    <div class="dinner">
-                        <p class="font-location">Dinner Service</p>
-                        <p>Monday to Saturday: 17pm - 22.30pm.</p>
-                        <p>Sunday & Bank Holidays: 12pm - 21.30pm.</p>
+                    <div class="contact-details">
+                        <div class="lunch">
+                            <p class="font-location">Lunch Service</p>
+                            <p>Monday to Saturday: 12pm - 15.30pm.</p>
+                            <p>Sunday & Bank Holidays: 12pm - 21.30pm.</p>
+                        </div>
+                        <div class="dinner">
+                            <p class="font-location">Dinner Service</p>
+                            <p>Monday to Saturday: 17pm - 22.30pm.</p>
+                            <p>Sunday & Bank Holidays: 12pm - 21.30pm.</p>
+                        </div>
                     </div>
+                    
                 </div>
-                
             </div>
             <div class="map">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9719.522366020965!2d-1.9068496154154657!3d52.48129769511959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bc8dea5a590b%3A0xf5a8185ddef9e97c!2sCity%20Centre%2C%20Birmingham!5e0!3m2!1spt-BR!2suk!4v1599229329498!5m2!1spt-BR!2suk" width="100%" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
@@ -154,7 +179,7 @@
         </section>
         <footer>
             <div class="footer">
-                <a href="#"><img src="./healthy-foods-img/instagram.png"></a>
+                <a href="http://www.instagram.com"><img src="./healthy-foods-img/instagram.png"></a>
                 <p>&copy;2020 <span class="logo">Stay<span>Healthy</span></span></p>
                 <p>Design by Merilyn. All Rights Reserved.</p>
                 
@@ -163,5 +188,6 @@
         </footer>
     </main>
     <script src="navibar.js"></script>
+    <script src="modal.js"></script>
 </body>
 </html>

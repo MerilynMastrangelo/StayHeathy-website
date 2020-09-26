@@ -3,6 +3,7 @@ const navSlide = () => {
     const nav = document.querySelector('ul');
     const navLinks = document.querySelectorAll('ul li');
     const body = document.querySelector('body');
+    
     //Toggle Nav
     burger.addEventListener('click', () => {
             nav.classList.toggle('nav-active');
@@ -16,8 +17,7 @@ const navSlide = () => {
         });
         //Animate burger
         burger.classList.toggle('toggle');
-        //body darker
-        body.classList.toggle('body-background');
     });
 }
+
 navSlide();
