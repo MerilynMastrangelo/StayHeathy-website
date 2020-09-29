@@ -9,6 +9,16 @@ body {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
   color: #899789;
+  overflow: hidden;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
 }
 
 h1 {
@@ -121,7 +131,7 @@ section {
   margin-bottom: 12%;
 }
 
-section img {
+img {
   width: 100%;
 }
 
@@ -155,6 +165,7 @@ button:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
 .home-content h1 {
@@ -217,6 +228,13 @@ h1 {
 
 #menu {
   margin: 0 8%;
+}
+
+#menu h4 {
+  text-transform: uppercase;
+  letter-spacing: 1.5pt;
+  font-size: 1.2rem;
+  padding: 20px 0;
 }
 
 #menu div.view-menu {
@@ -360,10 +378,9 @@ h1 {
   color: #e5eee2;
 }
 
-.footer img {
-  width: 16px;
-  height: 16px;
-  margin: 1% 0;
+.footer .fa-instagram {
+  color: #e5eee2;
+  font-size: 22px;
 }
 
 .footer .logo {
@@ -383,12 +400,33 @@ h1 {
     top: -4%;
     font-size: 4rem;
   }
+  .avocado {
+    display: none;
+  }
+  .tomato {
+    display: none;
+  }
   .salad {
     position: absolute;
     width: 250px;
   }
   .footer {
     margin: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .avocado {
+    position: absolute;
+    top: -14%;
+    left: 38%;
+    width: 165px;
+  }
+  .tomato {
+    position: absolute;
+    top: 86%;
+    left: 13%;
+    width: 100px;
   }
 }
 
@@ -485,6 +523,9 @@ h1 {
     position: fixed;
     z-index: 5;
     background: #e5eee2;
+  }
+  .header .fa-instagram {
+    font-size: 22px;
   }
   ul {
     position: fixed;
@@ -602,12 +643,6 @@ h1 {
   }
   #menu {
     margin-top: 10%;
-  }
-  #menu h4 {
-    text-transform: uppercase;
-    letter-spacing: 1.5pt;
-    font-size: 1.2rem;
-    padding: 5px 0;
   }
   .menu-container > div.meal-detail-00, .meal-detail-01
 , .meal-detail-02, .meal-detail-03 {
