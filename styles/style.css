@@ -1,44 +1,3 @@
-* {
-  margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-body {
-  background: #e5eee2;
-  font-family: "Raleway", sans-serif;
-  font-weight: 400;
-  color: #899789;
-  overflow: hidden;
-}
-
-main {
-  width: 100%;
-  height: 100vh;
-  overflow-y: scroll;
-  scroll-behavior: smooth;
-  -ms-scroll-snap-type: y mandatory;
-      scroll-snap-type: y mandatory;
-}
-
-h1 {
-  font-family: "DM Serif Text", serif;
-  font-weight: 400;
-  z-index: 1;
-}
-
-.discover {
-  text-align: center;
-  line-height: 1.0;
-  margin-bottom: 5%;
-}
-
-.discover p {
-  letter-spacing: 8pt;
-  font-size: 1.2rem;
-}
-
-/*header*/
 a {
   text-decoration: none;
   color: black;
@@ -124,6 +83,165 @@ li a:hover {
 
 .insta {
   display: none;
+}
+
+#menu {
+  margin: 0 8%;
+}
+
+#menu h4 {
+  text-transform: uppercase;
+  letter-spacing: 1.5pt;
+  font-size: 1.2rem;
+  padding: 20px 0;
+}
+
+#menu div.view-menu {
+  margin-bottom: 20%;
+  position: relative;
+}
+
+#menu div.view-menu .menu-btn {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+#menu div.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(0);
+          transform: translate(-50%, -50%) scale(0);
+  -webkit-transition: 20ms ease-in-out;
+  transition: 20ms ease-in-out;
+  border: 1px solid #426442;
+  z-index: 10;
+  background-color: #e5eee2;
+  width: 650px;
+  max-width: 80%;
+  padding: 20px 35px;
+}
+
+#menu div.modal h3 {
+  text-transform: uppercase;
+  color: #899789;
+  font-weight: 200;
+  font-size: 1.4rem;
+  margin: 10px 0;
+}
+
+#menu div.modal h6 {
+  color: #899789;
+  font-weight: 500;
+  font-size: 0.9rem;
+  text-transform: capitalize;
+  letter-spacing: normal;
+  font-family: "Martel", serif;
+}
+
+#menu div.modal .dot {
+  margin: 0 10px;
+}
+
+#menu div.modal p {
+  font-weight: 400;
+  font-size: 0.7rem;
+  margin: 5px 0;
+}
+
+#menu div.modal.active {
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+}
+
+#menu .modal-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#menu .modal-header .title {
+  font-family: "DM Serif Text", serif;
+  font-size: 2rem;
+}
+
+#menu .close-button {
+  float: right;
+}
+
+#menu .modal-header .close-button {
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #426442;
+}
+
+#menu #overlay {
+  position: fixed;
+  opacity: 0;
+  -webkit-transition: 20ms ease-in-out;
+  transition: 20ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+
+#menu #overlay.active {
+  pointer-events: all;
+  opacity: 1;
+}
+
+* {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #e5eee2;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  color: #899789;
+  overflow: hidden;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+}
+
+h1 {
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  z-index: 1;
+}
+
+.discover {
+  text-align: center;
+  line-height: 1.0;
+  margin-bottom: 5%;
+}
+
+.discover p {
+  letter-spacing: 8pt;
+  font-size: 1.2rem;
 }
 
 section {
@@ -224,93 +342,6 @@ h1 {
   max-width: 45%;
   height: 45%;
   margin: 0 auto;
-}
-
-#menu {
-  margin: 0 8%;
-}
-
-#menu h4 {
-  text-transform: uppercase;
-  letter-spacing: 1.5pt;
-  font-size: 1.2rem;
-  padding: 20px 0;
-}
-
-#menu div.view-menu {
-  margin-bottom: 20%;
-  position: relative;
-}
-
-#menu div.view-menu .menu-btn {
-  position: absolute;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-}
-
-#menu div.modal {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%) scale(0);
-          transform: translate(-50%, -50%) scale(0);
-  -webkit-transition: 20ms ease-in-out;
-  transition: 20ms ease-in-out;
-  border: 1px solid #426442;
-  z-index: 10;
-  background-color: #fff;
-  width: 500px;
-  max-width: 80%;
-}
-
-#menu div.modal.active {
-  -webkit-transform: translate(-50%, -50%) scale(1);
-          transform: translate(-50%, -50%) scale(1);
-}
-
-#menu .modal-header {
-  padding: 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#menu .modal-body {
-  padding: 15px;
-}
-
-#menu .modal-header .close-button {
-  border: none;
-  outline: none;
-  background: none;
-  font-size: 1.25rem;
-  font-weight: bold;
-  color: #426442;
-}
-
-#menu #overlay {
-  position: fixed;
-  opacity: 0;
-  -webkit-transition: 20ms ease-in-out;
-  transition: 20ms ease-in-out;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  pointer-events: none;
-}
-
-#menu #overlay.active {
-  pointer-events: all;
-  opacity: 1;
 }
 
 #contact {
@@ -418,7 +449,7 @@ h1 {
 @media screen and (min-width: 1200px) {
   .avocado {
     position: absolute;
-    top: -14%;
+    top: -17%;
     left: 38%;
     width: 165px;
   }
@@ -508,6 +539,18 @@ h1 {
     -ms-grid-row: 4;
     -ms-grid-row-span: 1;
     grid-row: 4/5;
+  }
+  .modal-body {
+    color: #426442;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    grid-gap: 35px;
+    margin: 0 10%;
+    margin-bottom: 10px;
   }
 }
 
@@ -650,6 +693,14 @@ h1 {
   }
   div.view-menu {
     padding-bottom: 10%;
+  }
+  div.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow-y: scroll;
   }
   .contact-container {
     -webkit-box-orient: vertical;

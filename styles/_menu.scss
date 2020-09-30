@@ -1,0 +1,94 @@
+#menu{
+    margin: 0 8%; 
+    h4{
+        text-transform: uppercase;
+        letter-spacing: 1.5pt;
+        font-size: 1.2rem;
+        padding: 20px 0;
+    }
+div.view-menu{
+    margin-bottom: 20%;
+    position: relative;
+    .menu-btn{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+div.modal{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 20ms ease-in-out;
+    border: 1px solid $colour2;
+    z-index: 10;
+    background-color: $colour0;
+    width: 650px;
+    max-width: 80%;
+    padding: 20px 35px;
+    h3{
+        text-transform: uppercase;
+        color: $colour1;
+        font-weight: 200;
+        font-size: 1.4rem;
+        margin: 10px 0;
+    }
+    h6{
+        color: $colour1;
+        font-weight: 500;
+        font-size: 0.9rem;
+        text-transform: capitalize;
+        letter-spacing: normal;
+        font-family: $fontLogo;
+    }
+    .dot{
+        margin: 0 10px;
+    }
+    p{
+        font-weight: 400;
+        font-size: 0.7rem;
+        margin: 5px 0;
+
+    }
+}
+div.modal.active{
+    transform: translate(-50%, -50%) scale(1);
+}
+.modal-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .title{
+        font-family: $font1;
+        font-size: 2rem; 
+    }
+
+}
+.close-button{
+    float: right;
+}
+.modal-header .close-button{
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: $colour2;
+}
+#overlay{
+    position: fixed;
+    opacity: 0;
+    transition: 20ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+}
+#overlay.active{
+    pointer-events: all;
+    opacity: 1;
+}
+}

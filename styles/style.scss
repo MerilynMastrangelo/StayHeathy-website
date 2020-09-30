@@ -1,11 +1,6 @@
-@import "./header.scss";
-
-$font0: 'Raleway', sans-serif;
-$font1: 'DM Serif Text', serif;
-$fontLogo: 'Martel', serif;
-$colour0: #e5eee2;
-$colour1: rgb(137, 151, 137);
-$colour2: rgb(66, 100, 66);
+@import "./variables";
+@import "./header";
+@import "./menu";
 
 *{
     margin: 0;
@@ -135,73 +130,6 @@ h1{
 
 // Fim About
 
-// Menu
-#menu{
-    margin: 0 8%; 
-    h4{
-        text-transform: uppercase;
-        letter-spacing: 1.5pt;
-        font-size: 1.2rem;
-        padding: 20px 0;
-    }
-div.view-menu{
-    margin-bottom: 20%;
-    position: relative;
-    .menu-btn{
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-}
-div.modal{
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0);
-    transition: 20ms ease-in-out;
-    border: 1px solid $colour2;
-    z-index: 10;
-    background-color: #fff;
-    width: 500px;
-    max-width: 80%;
-}
-div.modal.active{
-    transform: translate(-50%, -50%) scale(1);
-}
-.modal-header{
-    padding: 15px;
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
-}
-.modal-body{
-    padding: 15px;
-}
-.modal-header .close-button{
-    border: none;
-    outline: none;
-    background: none;
-    font-size: 1.25rem;
-    font-weight: bold;
-    color: $colour2;
-}
-#overlay{
-    position: fixed;
-    opacity: 0;
-    transition: 20ms ease-in-out;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    pointer-events: none;
-}
-#overlay.active{
-    pointer-events: all;
-    opacity: 1;
-}
-}
-
 //Contact
 #contact{
     margin: 0 8%;
@@ -294,7 +222,7 @@ div.modal.active{
 @media screen and (min-width: 1200px){
     .avocado{
         position: absolute;
-        top: -14%;
+        top: -17%;
         left: 38%;
         width: 165px;
     }
@@ -353,6 +281,19 @@ div.modal.active{
             grid-column: 1/2;
             grid-row: 4/5;
         }
+    }
+    //Modal
+    
+    
+    .modal-body{
+        color: $colour2;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 35px;
+        margin: 0 10%;
+        margin-bottom: 10px;
+        
     }
 }
 @media screen and (max-width: 760px){
@@ -471,6 +412,14 @@ div.modal.active{
     }
     div.view-menu{
         padding-bottom: 10%;
+    }
+    div.modal{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        overflow-y: scroll;
     }
     //contact
     .contact-container{
