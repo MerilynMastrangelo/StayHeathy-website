@@ -1,11 +1,14 @@
+// Menu Section
 #menu{
     margin: 0 8%; 
+    //Menu Title
     h4{
         text-transform: uppercase;
         letter-spacing: 1.5pt;
         font-size: 1.2rem;
         padding: 20px 0;
     }
+//Modal - view full Menu btn
 div.view-menu{
     margin-bottom: 20%;
     position: relative;
@@ -27,6 +30,7 @@ div.modal{
     width: 650px;
     max-width: 80%;
     padding: 20px 35px;
+    //Modal Menu titles
     h3{
         text-transform: uppercase;
         color: $colour1;
@@ -34,6 +38,7 @@ div.modal{
         font-size: 1.4rem;
         margin: 10px 0;
     }
+    //Meal titles and prices
     h6{
         color: $colour1;
         font-weight: 500;
@@ -45,16 +50,17 @@ div.modal{
     .dot{
         margin: 0 10px;
     }
+    //Modal Body - Meal Description
     p{
         font-weight: 400;
         font-size: 0.7rem;
         margin: 5px 0;
-
     }
 }
 div.modal.active{
     transform: translate(-50%, -50%) scale(1);
 }
+// Close Btn and Title - Modal Header
 .modal-header{
     display: flex;
     justify-content: space-between;
@@ -63,7 +69,6 @@ div.modal.active{
         font-family: $font1;
         font-size: 2rem; 
     }
-
 }
 .close-button{
     float: right;
@@ -76,6 +81,7 @@ div.modal.active{
     font-weight: bold;
     color: $colour2;
 }
+// Overlay - dark Background
 #overlay{
     position: fixed;
     opacity: 0;

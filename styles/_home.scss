@@ -1,0 +1,27 @@
+//Button
+#book-table{
+    margin: 35px 0;    
+    
+}
+//Display Grid inside Home Section
+.home-content{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    justify-items: center;
+    align-items: center;
+    position: relative;
+    h1{
+        font-size: 3rem;
+        line-height: 1.0;
+        margin: 25px 0;
+        text-align: left;
+    }
+    .content{
+        grid-column: 1/2;
+    }    
+    .land-img{
+        max-width: 650px;
+        grid-column: 2/3;
+    }
+
+}

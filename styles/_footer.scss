@@ -1,0 +1,24 @@
+.footer{
+    background: $colour1;
+    margin: 0;
+    padding: 10px 0;
+    text-align: center;
+    margin: 0 8%;
+    color: $colour0;
+    font-family: $font0;
+    // Copyright Icon
+    span{
+        color: $colour0;
+    }
+    // Font Awesome Insta Icon
+    .fa-instagram{
+        color: $colour0;
+        font-size: 22px;
+    }
+    // Name Logo
+    .logo{
+        font-family: $fontLogo;
+        font-size: 15px;
+        font-weight: normal;
+    }
+}

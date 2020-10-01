@@ -1,0 +1,43 @@
+// Contact Section
+#contact{
+    margin: 0 8%;
+    padding: 0;
+    // Title
+        h1{
+            color: $colour0;
+        }
+    span{
+        font-weight: bold;
+    }
+    // Location and Contact Column
+    .location{
+        line-height: 1.4;
+    }
+    .font-location{
+        font-family: $font1;
+        letter-spacing: 1.1pt;
+        font-size: 1.6rem;
+    }
+    .space-contact{
+        margin: 20% 0;
+        line-height: 1.1;
+        p{
+            font-size: 14px;
+        }
+    }
+    .contactUs{
+        background: $colour1;
+        color: $colour0;
+        font-family: $fontLogo;
+    }
+    //Opening Hours Details
+    .contact-container{
+        display: flex;
+        justify-content: space-around;
+        padding: 5% 0;
+        
+        .lunch{
+            padding-bottom: 7%;
+        }
+    }  
+}

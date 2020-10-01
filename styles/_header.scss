@@ -1,7 +1,4 @@
-a{
-    text-decoration: none;
-    color:black;
-}
+// Header and Nav
 .header{
     width: 100%;
     padding: 25px 8%; 
@@ -11,10 +8,13 @@ a{
     align-content: center;
 }
 
-span{
-    font-weight: bold;
+//anchor
+a{
+    text-decoration: none;
+    color:black;
 }
 
+//logo
 .logo{
     font-family: $fontLogo;
     color: $colour2;
@@ -23,47 +23,49 @@ span{
         text-decoration: none;
         border: none;
     }
-    
 }
 
-    ul{
+span{
+    font-weight: bold;
+}
+// Menu
+ul{
         display: flex;  
         flex-direction: row;
         justify-content: space-between;
         width: 30%;
         align-self: center;
-    }
+}
 
-    li{
-        list-style: none;
-        text-transform: uppercase; 
-        transition: .1s; 
-        a{
-            font-family: $font0;
-            color: $colour2;
-            font-size: 1rem;    
-            position: relative;
-        }
-        a:hover{
-            border-bottom: 1px solid $colour2;
-            
-        }
-    }
-    
-    .burger{
-        cursor: pointer;
-        z-index: 10;
-        display: none;
-    }
-    .burger div{
-        width: 28px;
-        height: 2px; 
-        background: $colour2;
-        margin: 5px;
-        transition: all 0.5s ease-out;
-    }
-    
-    .insta{
-        display: none;
-    }
-// Fim header
+li{
+    list-style: none;
+    text-transform: uppercase; 
+    transition: .1s; 
+a{
+    font-family: $font0;
+    color: $colour2;
+    font-size: 1rem;    
+    position: relative;
+}
+a:hover{
+    border-bottom: 1px solid $colour2;
+        
+}
+}
+//burguer menu
+.burger{
+    cursor: pointer;
+    z-index: 10;
+    display: none;
+}
+.burger div{
+    width: 28px;
+    height: 2px; 
+    background: $colour2;
+    margin: 5px;
+    transition: all 0.5s ease-out;
+}
+//insta icon
+.insta{
+    display: none;
+}
